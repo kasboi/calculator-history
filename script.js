@@ -107,12 +107,13 @@ function calculationFn(operatorType) {
 function updateHistory(calc) {
     history.push(calc)
     const historyList = document.querySelector(".history-list")
-    historyList.innerHTML += `
+    const template = `
     <div class="history-list__item">
         <div class="history-list__operation">${calc.firstNum} ${calc.operation} ${calc.secondNum} =</div>
         <span class="history-list__result">${calc.result}</span>
     </div>
     `
+    historyList.innerHTML = template + historyList.innerHTML
 }
 
 function resetCalc() {
