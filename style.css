@@ -216,3 +216,9 @@ label:active:after {
     font-size: 1.85rem;
     font-weight: 700;
 }
+
+@media screen and (max-width: 600px) {
+    .calc-container {
+        flex-direction: column;
+    }
+}
