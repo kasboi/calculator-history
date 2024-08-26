@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="./style.css" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    </head>
+
+    <body>
+        <div class="theme-switch">
+            <ion-icon name="cloudy-night-outline"></ion-icon>
+            <div style="display: flex">
+                <input type="checkbox" id="switch"/>
+                <label for="switch">Toggle</label>
+            </div>
+            <ion-icon name="sunny-outline"></ion-icon>
+        </div>
+        <div class="calc-container">
+            <div class="calc">
+                <section class="screen">0</section>
+
+                <section class="calc-buttons">
+                    <div class="calc-button-row">
+                        <button class="calc-button calc-btn-operator double" id="calc-clear">C</button>
+                        <button class="calc-button calc-btn-operator" id="calc-del">←</button>
+                        <button class="calc-button calc-btn-operator" id="calc-divide">÷</button>
+                    </div>
+                    <div class="calc-button-row">
+                        <button class="calc-button calc-btn-number">7</button>
+                        <button class="calc-button calc-btn-number">8</button>
+                        <button class="calc-button calc-btn-number">9</button>
+                        <button class="calc-button calc-btn-operator" id="calc-multiply">×</button>
+                    </div>
+                    <div class="calc-button-row">
+                        <button class="calc-button calc-btn-number">4</button>
+                        <button class="calc-button calc-btn-number">5</button>
+                        <button class="calc-button calc-btn-number">6</button>
+                        <button class="calc-button calc-btn-operator" id="calc-minus">-</button>
+                    </div>
+                    <div class="calc-button-row">
+                        <button class="calc-button calc-btn-number">1</button>
+                        <button class="calc-button calc-btn-number">2</button>
+                        <button class="calc-button calc-btn-number">3</button>
+                        <button class="calc-button calc-btn-operator" id="calc-plus">+</button>
+                    </div>
+                    <div class="calc-button-row">
+                        <button class="calc-button calc-btn-number triple">0</button>
+                        <button class="calc-button calc-btn-operator" id="calc-equals">=</button>
+                    </div>
+                </section>
+            </div>
+            <div class="history-container">
+                <h2>History</h2>
+                <div class="history-list">
+                    <!-- <div class="history-list__item">
+                        <div class="history-list__operation">10 + 20 =</div>
+                        <span class="history-list__result">30</span>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <script src="./script.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
